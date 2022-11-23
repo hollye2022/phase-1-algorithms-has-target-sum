@@ -1,15 +1,29 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i +1 ; j < array.length; j++) {
+      if (array[i] + array[j] === target) {
+        return true;
+      } 
+    }
+  } return false;
 }
 
 /* 
   Write the Big O time complexity of your function here
 */
+//  n^2
+// /* 
+//   Add your pseudocode here
+// */
+// iterate through the array with index i;
+// iterrate through the array with index j;
 
-/* 
-  Add your pseudocode here
-*/
+// if array at index i + array at index j is equal to the target number 
+// then returns true 
 
+
+// else return false
 /*
   Add written explanation of your solution here
 */
